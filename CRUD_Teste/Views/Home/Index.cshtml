@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    
+}
+
+<div class="jumbotron">
+    <h1>Teste CRUD - Usuario</h1>
+</div>
+
+
+@Html.BeginForm("Salvar", "Home", FormMethod.Post, new { enctype = "multipart/form-data", id = "frm" })
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Nome</h2><input name="nome" />
+    </div>
+    <div class="col-md-4">
+        <h2>CPF</h2><input name="cpf" />
+    </div>
+    <div class="col-md-4">
+        <h2>Telefone</h2>
+        <input name="telefone" />
+        <br/>
+        <br />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <button name="button" type="submit" value="salvar">Salvar</button>
+    </div>
+</div>
